@@ -11,7 +11,7 @@ PhpDus\Bundle\AdminBundle\Entity\Company:
         name: <company()>
         website: <url()>
 
-PhpDus\Bundle\AdminBundle\Entity\Skills:
+PhpDus\Bundle\AdminBundle\Entity\Skill:
     skill1:
         name: PHP
     skill2:

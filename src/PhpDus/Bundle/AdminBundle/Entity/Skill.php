@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table()
  * @ORM\Entity
  */
-class Skills
+class Skill
 {
     /**
      * @var integer
@@ -28,6 +28,10 @@ class Skills
      */
     private $name;
 
+    function __toString()
+    {
+        return $this->name;
+    }
 
     /**
      * Get id

@@ -4,4 +4,30 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
+    <services>
+        <!-- Company Admin -->
+        <service id="phpug.demo.admin.company" class="PhpDus\Bundle\AdminBundle\Admin\CompanyAdmin">
+            <argument />
+            <argument>PhpDus\Bundle\AdminBundle\Entity\Company</argument>
+            <argument />
+            <tag name="sonata.admin" manager_type="orm" group="Demo" label="Company"/>
+        </service>
+
+        <!-- Person Admin -->
+        <service id="phpug.demo.admin.person" class="PhpDus\Bundle\AdminBundle\Admin\PersonAdmin">
+            <argument />
+            <argument>PhpDus\Bundle\AdminBundle\Entity\Person</argument>
+            <argument />
+            <tag name="sonata.admin" manager_type="orm" group="Demo" label="Person"/>
+        </service>
+
+        <!-- Skill Admin -->
+        <service id="phpug.demo.admin.skill" class="PhpDus\Bundle\AdminBundle\Admin\SkillAdmin">
+            <argument />
+            <argument>PhpDus\Bundle\AdminBundle\Entity\Skill</argument>
+            <argument />
+            <tag name="sonata.admin" manager_type="orm" group="Demo" label="Skills"/>
+        </service>
+    </services>
+
 </container>

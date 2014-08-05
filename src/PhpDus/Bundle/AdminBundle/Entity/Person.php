@@ -53,13 +53,18 @@ class Person
     /**
      * @var ArrayCollection
      *
-     * @ORM\ManyToMany(targetEntity="Skills")
+     * @ORM\ManyToMany(targetEntity="Skill")
      */
     private $skills;
 
     function __construct()
     {
         $this->skills = new ArrayCollection;
+    }
+
+    function __toString()
+    {
+        return $this->name;
     }
 
     /**

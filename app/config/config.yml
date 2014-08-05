@@ -65,3 +65,11 @@ swiftmailer:
 # Alice Configuration
 hautelook_alice:
     locale: de_DE
+
+# Sonata Configuration
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        # Enable the SonataAdminBundle block
+        sonata.admin.block.admin_list:
+            contexts:   [admin]

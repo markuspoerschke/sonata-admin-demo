@@ -48,6 +48,11 @@ class Company
         $this->persons = new ArrayCollection;
     }
 
+    function __toString()
+    {
+        return $this->name;
+    }
+
     /**
      * Get id
      *
