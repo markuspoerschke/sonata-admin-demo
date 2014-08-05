@@ -1,0 +1,4 @@
+php_dus_admin:
+    resource: "@PhpDusAdminBundle/Resources/config/routing.xml"
+    prefix:   /
+
