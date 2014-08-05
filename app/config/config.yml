@@ -61,3 +61,7 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+# Alice Configuration
+hautelook_alice:
+    locale: de_DE

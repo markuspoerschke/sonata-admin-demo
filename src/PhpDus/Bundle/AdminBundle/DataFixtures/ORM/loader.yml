@@ -1,0 +1,32 @@
+PhpDus\Bundle\AdminBundle\Entity\Person:
+    person{1..100}:
+        name: <name()>
+        email: <email()>
+        birthDate: <dateTimeBetween('-70years', '-20years')>
+        company: @company*
+        skills: <numberBetween(1, 6)>x @skill*
+
+PhpDus\Bundle\AdminBundle\Entity\Company:
+    company{1..20}:
+        name: <company()>
+        website: <url()>
+
+PhpDus\Bundle\AdminBundle\Entity\Skills:
+    skill1:
+        name: PHP
+    skill2:
+        name: Java
+    skill3:
+        name: JavaScript
+    skill4:
+        name: C++
+    skill5:
+        name: HTML
+    skill6:
+        name: CSS
+    skill7:
+        name: Python
+    skill8:
+        name: Perl
+    skill9:
+        name: Ruby
