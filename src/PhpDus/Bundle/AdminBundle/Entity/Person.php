@@ -164,4 +164,20 @@ class Person
 
         return $this;
     }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getSkills()
+    {
+        return $this->skills;
+    }
+
+    /**
+     * @param ArrayCollection $skills
+     */
+    public function setSkills($skills)
+    {
+        $this->skills = $skills;
+    }
 }

@@ -19,7 +19,7 @@
         "sensio/framework-extra-bundle": "~3.0",
         "incenteev/composer-parameter-handler": "~2.0",
         "hautelook/alice-bundle": "*",
-        "sonata-project/admin-bundle": "*",
+        "sonata-project/admin-bundle": "dev-master",
         "sonata-project/doctrine-orm-admin-bundle": "*"
     },
     "require-dev": {
