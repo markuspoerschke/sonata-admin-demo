@@ -16,6 +16,7 @@ class PersonAdmin extends Admin
             ->add('birthdate', 'birthday')
             ->with('Contact')
                 ->add('email')
+                ->add('company')
             ->end()
             ->with('Skills')
                 ->add('skills')
@@ -34,6 +35,7 @@ class PersonAdmin extends Admin
     {
         $filter
             ->add('name')
-            ->add('skills');
+            ->add('skills')
+            ->add('company');
     }
 }
