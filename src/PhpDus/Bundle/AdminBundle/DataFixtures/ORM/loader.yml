@@ -11,6 +11,12 @@ PhpDus\Bundle\AdminBundle\Entity\Company:
         name: <company()>
         website: <url()>
 
+PhpDus\Bundle\AdminBundle\Entity\Address:
+    address{1..400}:
+        street: <streetName()>
+        city: <city()>
+        person: @person<current()>
+
 PhpDus\Bundle\AdminBundle\Entity\Skill:
     skill1:
         name: PHP

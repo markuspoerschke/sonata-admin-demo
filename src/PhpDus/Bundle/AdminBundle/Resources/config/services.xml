@@ -28,6 +28,14 @@
             <argument />
             <tag name="sonata.admin" manager_type="orm" group="Demo" label="Skills"/>
         </service>
+
+        <!-- Address Admin -->
+        <service id="phpug.demo.admin.address" class="PhpDus\Bundle\AdminBundle\Admin\AddressAdmin">
+            <argument />
+            <argument>PhpDus\Bundle\AdminBundle\Entity\Address</argument>
+            <argument />
+            <tag name="sonata.admin" manager_type="orm" group="Demo" label="Address" show_in_dashboard="false" />
+        </service>
     </services>
 
 </container>

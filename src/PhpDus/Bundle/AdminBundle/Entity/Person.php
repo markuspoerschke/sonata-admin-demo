@@ -57,9 +57,17 @@ class Person
      */
     private $skills;
 
+    /**
+     * @var ArrayCollection
+     *
+     * @ORM\OneToMany(targetEntity="Address", mappedBy="person", cascade={"all"})
+     */
+    private $addresses;
+
     function __construct()
     {
-        $this->skills = new ArrayCollection;
+        $this->skills    = new ArrayCollection;
+        $this->addresses = new ArrayCollection;
     }
 
     function __toString()
@@ -179,5 +187,27 @@ class Person
     public function setSkills($skills)
     {
         $this->skills = $skills;
+    }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getAddresses()
+    {
+        return $this->addresses;
+    }
+
+    /**
+     * @param ArrayCollection $addresses
+     */
+    public function setAddresses($addresses)
+    {
+        $this->addresses = $addresses;
+    }
+
+    public function addAddress(Address $address)
+    {
+        $address->setPerson($this);
+        $this->addresses[] = $address;
     }
 }
