@@ -11,4 +11,5 @@ Just run the following commands:
 ```
 $ app/console doctrine:schema:update
 $ app/console doctrine:fixtures:load
+$ app/console server:run localhost:8080
 ```
